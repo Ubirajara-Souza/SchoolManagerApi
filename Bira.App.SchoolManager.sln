@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{5E4C3A71-3A22-4DB0-8616-24484025794B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{ED20745A-4D0F-4187-9DAC-FD42820ED10B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{103AF90C-78CA-46E7-BDFC-B7BBDFD68A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{616F1266-7EB1-4828-A39C-9D494ED1E143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{99825DFF-DD24-49E0-84FD-E84F17AEA43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bira.App.SchoolManager.Api", "Bira.App.SchoolManager.Api\Bira.App.SchoolManager.Api.csproj", "{46F1593D-8B14-4F97-A20B-E840CEE93FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bira.App.SchoolManager.Application", "Bira.App.SchoolManager.Application\Bira.App.SchoolManager.Application.csproj", "{54B7340D-DB04-4B60-8889-9217722272F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bira.App.SchoolManager.Domain", "Bira.App.SchoolManager.Domain\Bira.App.SchoolManager.Domain.csproj", "{715B9E20-DB90-448C-B67A-7F314CF0A171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bira.App.SchoolManager.Infra", "Bira.App.SchoolManager.Infra\Bira.App.SchoolManager.Infra.csproj", "{4AE71539-C403-4DAA-8E9E-CEE460909F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bira.App.SchoolManager.Service", "Bira.App.SchoolManager.Service\Bira.App.SchoolManager.Service.csproj", "{1C513060-9414-46F0-A5FC-10A86FC6E6EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46F1593D-8B14-4F97-A20B-E840CEE93FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F1593D-8B14-4F97-A20B-E840CEE93FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F1593D-8B14-4F97-A20B-E840CEE93FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F1593D-8B14-4F97-A20B-E840CEE93FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B7340D-DB04-4B60-8889-9217722272F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B7340D-DB04-4B60-8889-9217722272F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B7340D-DB04-4B60-8889-9217722272F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B7340D-DB04-4B60-8889-9217722272F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715B9E20-DB90-448C-B67A-7F314CF0A171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715B9E20-DB90-448C-B67A-7F314CF0A171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715B9E20-DB90-448C-B67A-7F314CF0A171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715B9E20-DB90-448C-B67A-7F314CF0A171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE71539-C403-4DAA-8E9E-CEE460909F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE71539-C403-4DAA-8E9E-CEE460909F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE71539-C403-4DAA-8E9E-CEE460909F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE71539-C403-4DAA-8E9E-CEE460909F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C513060-9414-46F0-A5FC-10A86FC6E6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C513060-9414-46F0-A5FC-10A86FC6E6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C513060-9414-46F0-A5FC-10A86FC6E6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C513060-9414-46F0-A5FC-10A86FC6E6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46F1593D-8B14-4F97-A20B-E840CEE93FB1} = {5E4C3A71-3A22-4DB0-8616-24484025794B}
+		{54B7340D-DB04-4B60-8889-9217722272F7} = {ED20745A-4D0F-4187-9DAC-FD42820ED10B}
+		{715B9E20-DB90-448C-B67A-7F314CF0A171} = {103AF90C-78CA-46E7-BDFC-B7BBDFD68A2A}
+		{4AE71539-C403-4DAA-8E9E-CEE460909F2C} = {616F1266-7EB1-4828-A39C-9D494ED1E143}
+		{1C513060-9414-46F0-A5FC-10A86FC6E6EF} = {99825DFF-DD24-49E0-84FD-E84F17AEA43F}
+	EndGlobalSection
+EndGlobal

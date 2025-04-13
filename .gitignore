@@ -33,9 +33,3 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
-
-.idea
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
