@@ -63,7 +63,6 @@ namespace Bira.App.SchoolManager.Api.Controllers.V1
         // Rota para registrar autorizações do usuário
 
         [HttpPost("add-claim")]
-        [Authorize]
         public async Task<ActionResult> AddClaim([FromBody] AddClaimDto addClaimDto)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);

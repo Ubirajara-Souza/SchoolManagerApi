@@ -76,12 +76,16 @@ namespace Bira.App.SchoolManager.Service.Services
         {
             var user = await _userManager.FindByEmailAsync(addClaimDto.Email);
             if (user is null)
-                return IdentityResult.Failed(new IdentityError { Description = "User not found." });
+                return IdentityResult.Failed(new IdentityError { Description = "Usuário não encontrado." });
 
-            var claim = new Claim(addClaimDto.ClaimType, addClaimDto.ClaimValue);
-            var result = await _userManager.AddClaimAsync(user, claim);
+            foreach (var claim in addClaimDto.Claims)
+            {
+                var result = await _userManager.AddClaimAsync(user, new Claim(claim.ClaimType, claim.ClaimValue));
+                if (!result.Succeeded)
+                    return result; 
+            }
 
-            return result;
+            return IdentityResult.Success;
         }
         public async Task Logout()
         {
