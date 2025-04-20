@@ -8,6 +8,7 @@ namespace Bira.App.SchoolManager.Service.Interfaces
     {
         Task<LoginResponse> GenerateJwt(string email);
         Task<SignInResult> Login(LoginUserDto loginUser);
+        Task<LoginResponse> RefreshToken(RefreshTokenUserDto refreshTokenUser);
         Task<IdentityResult> Register(RegisterUserDto registerUser);
         Task<IdentityResult> AddClaim(AddClaimDto addClaimDto);
         Task Logout();

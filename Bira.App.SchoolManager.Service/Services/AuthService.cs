@@ -54,6 +54,15 @@ namespace Bira.App.SchoolManager.Service.Services
 
             return result;
         }
+        public async Task<LoginResponse> RefreshToken(RefreshTokenUserDto refreshTokenUser)
+        {
+            var user = await _userManager.FindByEmailAsync(refreshTokenUser.Email);
+
+            if (user is null)
+                return null;
+
+            return await GenerateJwt(user.Email);
+        }
         public async Task<LoginResponse> GenerateJwt(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);

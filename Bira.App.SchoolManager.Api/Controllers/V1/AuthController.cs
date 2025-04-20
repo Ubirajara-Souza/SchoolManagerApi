@@ -60,8 +60,24 @@ namespace Bira.App.SchoolManager.Api.Controllers.V1
             return CustomResponse(loginUser);
         }
 
-        // Rota para registrar autorizações do usuário
+        // refresh token de usuário
+        [HttpPost("refresh-token")]
+        [Authorize]
+        public async Task<ActionResult> RefreshToken([FromBody] RefreshTokenUserDto refreshTokenUser)
+        {
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
+            var response = await _authService.RefreshToken(refreshTokenUser);
+
+            if (response is null)
+            {
+                NotifyError("Usuário não encontrado");
+                return CustomResponse();
+            }
+
+            return CustomResponse(response);
+        }
+        // Rota para registrar autorizações do usuário
         [HttpPost("add-claim")]
         public async Task<ActionResult> AddClaim([FromBody] AddClaimDto addClaimDto)
         {
